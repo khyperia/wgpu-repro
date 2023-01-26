@@ -1,0 +1,17 @@
+[package]
+name = "wgpu-repro"
+version = "0.1.0"
+edition = "2021"
+resolver = "2"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+console_error_panic_hook = "*"
+console_log = { version = "*", features = ["color"] }
+log = "*"
+wasm-bindgen = "*"
+wasm-bindgen-futures = "*"
+web-sys = "*"
+wgpu = "*"
